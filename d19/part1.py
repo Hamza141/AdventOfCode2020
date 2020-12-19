@@ -27,6 +27,8 @@ while i < len(lines):
 
     i += 1
 
+rules = re.sub(r'\b0\b', 'start', rules)
+
 before = 0
 after = ord('a')
 for i in range(26):

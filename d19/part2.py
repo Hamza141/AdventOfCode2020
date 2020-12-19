@@ -27,6 +27,7 @@ while i < len(lines):
 
     i += 1
 
+rules = re.sub(r'\b0\b', 'start', rules)
 rules = rules.replace('8: 42', '8: 42 | 42 8')
 rules = rules.replace('11: 42 31', '11: 42 31 | 42 11 31')
 
